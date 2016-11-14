@@ -7,6 +7,15 @@
     <title>Node Express Joke Book</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1>Add a joke:</h1>
+    <form>
+      <label for="joker">Your Name</label>
+      <input id="joker" type="text"></input><br>
+      <textarea rows="4" cols="50" id="newJoke">Delete this text and enter the joke question here...</textarea><br>
+      <textarea rows="4" cols="50" id="punchline">Delete this text and enter the punchline here...</textarea><br>
+      <button id="submit">SUBMIT JOKE</button>
+    </form>
+    <h1>Check out these jokes!</h1>
+    <div id="jokes"></div>
   </body>
 </html>
