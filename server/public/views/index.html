@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="vendor/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/client.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Node Express Joke Book</title>
   </head>
   <body>
@@ -11,8 +12,10 @@
     <form>
       <label for="joker">Your Name</label>
       <input id="joker" type="text"></input><br>
-      <textarea rows="4" cols="50" id="newJoke">Delete this text and enter the joke question here...</textarea><br>
-      <textarea rows="4" cols="50" id="punchline">Delete this text and enter the punchline here...</textarea><br>
+      <label for="newJoke">Joke Question:</label>
+      <textarea rows="4" cols="50" id="newJoke"></textarea><br>
+      <label for="punchline">Punchline:</label>
+      <textarea rows="4" cols="50" id="punchline"></textarea><br>
       <button id="submit">SUBMIT JOKE</button>
     </form>
     <h1>Check out these jokes!</h1>
