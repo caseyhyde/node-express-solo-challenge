@@ -6,8 +6,6 @@ $(document).ready(function() {
   $('button').on('click', function(event) {
     event.preventDefault();
     sendJokes();
-    getJokes();
-    appendJokes(jokes);
   });
   //Get jokes from server
   function getJokes() {
@@ -36,6 +34,7 @@ $(document).ready(function() {
       data: newJoke,
       success: function() {
         console.log("Joke sent!");
+        getJokes();
       }
     });
   }

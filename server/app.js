@@ -18,6 +18,7 @@ app.post('/jokes', function(req, res) {
   jokes.push(req.body);
   console.log(jokes);
   console.log("Received new joke from client, pushing to array: ", req.body);
+  res.sendStatus(200);
 });
 
 app.listen(3000);
